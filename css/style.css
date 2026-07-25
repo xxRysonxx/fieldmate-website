@@ -1171,6 +1171,24 @@ button:focus-visible,
 .demo-hero h1{font-size:clamp(32px,4.6vw,46px);line-height:1.12;margin-bottom:18px;}
 .demo-hero .lead{font-size:17px;color:var(--text-mid);line-height:1.65;}
 
+@media (max-width:600px){
+
+  .demo-header{
+    padding:20px;
+  }
+
+  .demo-header .back-link-demo{
+    left:16px;
+    font-size:0;
+  }
+
+  .demo-header .back-link-demo svg{
+    width:20px;
+    height:20px;
+  }
+
+}
+
 /* Video mockup (16:9 placeholder with play button) */
 .video-frame{
   position:relative;width:100%;aspect-ratio:16/9;border-radius:var(--radius-lg);
