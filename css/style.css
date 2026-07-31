@@ -660,7 +660,7 @@ footer{border-top:1px solid var(--line);padding:50px 0 30px;}
   .nav-links #navCtaBtn{
     display:block;width:100%;text-align:center;padding:12px 0;
     margin-top:10px;border-radius:10px;font-size:16px;
-    color: #000000;font-weight: 700;
+    color: #000;font-weight: 700;
   }
   .nav-menu-btn{display:flex;}
   .steps{grid-template-columns:1fr;}
