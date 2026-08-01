@@ -1745,7 +1745,7 @@ button:focus-visible,
 
 
 /* BOOKING IFRAME */
-.booking-wrapper {
+/* .booking-wrapper {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -1759,4 +1759,23 @@ button:focus-visible,
   height: 700px;
   border: none;
   display: block;
+} */
+
+.booking-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.booking-wrapper iframe {
+  width: 100%;
+  min-height: 900px;
+  height: 900px;
+  border: none;
+  display: block;
+}
+
+html, body {
+  overflow-x: hidden;
 }
