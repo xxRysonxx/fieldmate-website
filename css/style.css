@@ -198,7 +198,7 @@ nav a[aria-current="page"]::after {
   border:1px solid var(--panel-border);
   color:var(--text-hi);
 }
-.btn-ghost:hover{background:rgba(255,255,255,.06);border-color:#2a3444;}
+.btn-ghost:hover{background:rgba(255, 255, 255, 0.06);border-color:#2a3444;}
 .btn-sm{padding:10px 18px;font-size:13.5px;}
 .btn-block{width:100%;}
 
@@ -1530,7 +1530,7 @@ button:focus-visible,
   transition: color var(--transition-fast);
 }
 
-.link-cyan::after {
+/* .link-cyan::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1543,7 +1543,7 @@ button:focus-visible,
 
 .link-cyan:hover::after {
   width: 100%;
-}
+} */
 
 .link-cyan:hover {
   color: var(--cyan-2);
@@ -1779,3 +1779,4 @@ button:focus-visible,
 html, body {
   overflow-x: hidden;
 }
+
