@@ -1471,7 +1471,7 @@ button:focus-visible,
 
 /* HVAC hero image crop adjustment only */
 .hero-hvac-position{
-  object-position:center bottom;
+  object-position:center;
 }
 
 .article-body{max-width:680px;margin:0 auto;padding:56px 24px 0;}
