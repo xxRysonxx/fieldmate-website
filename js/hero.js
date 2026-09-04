@@ -15,13 +15,19 @@ const prefersReduced =
 
 
 const chatScript = [
-  { type: 'out', text: "Hey, this is ABC Plumbing! Sorry we missed your call, how can we help today?" },
-  { type: 'in',  text: "Hi, my kitchen sink is leaking bad under the cabinet." },
-  { type: 'out', text: "Sorry to hear that. Is water actively pooling right now?" },
-  { type: 'in',  text: "Yes, it's pooling under the cabinet." },
-  { type: 'out', text: "Got it, that's urgent. I have a tech free today at 2:30 PM or 4:00 PM. Which works?" },
-  { type: 'in',  text: "2:30 works great." },
-  { type: 'out', text: "Perfect, you're booked for 2:30 PM today. See you soon!" }
+{ type: 'out', text: "Hey, this is ABC Plumbing! Sorry we missed your call. How can we help?" },
+
+{ type: 'in', text: "Hi, my kitchen sink has been draining really slowly." },
+
+{ type: 'out', text: "Got it. Is it just the kitchen sink, or are any other drains affected?" },
+
+{ type: 'in', text: "Just the kitchen sink." },
+
+{ type: 'out', text: "That's frustrating. What's the service address and your name?" },
+
+{ type: 'in', text: "123 Main Street. Sarah." },
+
+{ type: 'out', text: "Perfect, Sarah. A team member will follow up with you as soon as possible." }
 ];
 
 

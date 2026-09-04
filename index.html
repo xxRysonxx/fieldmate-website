@@ -1,558 +1,1442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-<!-- =========================================
-     PAGE-SPECIFIC SEO (EDIT EVERY PAGE)
-========================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<title>FieldMate | Turn Missed Calls Into Booked Jobs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+  rel="stylesheet">
 
-<meta name="description" content="FieldMate helps service businesses capture missed calls, follow up with leads, book appointments, and request Google reviews automatically.">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-<link rel="canonical" href="https://fieldmate.ca/">
-
-
-<!-- =========================================
-     PAGE-SPECIFIC SOCIAL SHARING (EDIT EVERY PAGE)
-========================================= -->
-
-<meta property="og:title" content="FieldMate | Turn Missed Calls Into Booked Jobs">
-
-<meta property="og:description" content="FieldMate helps trades and service businesses recover missed calls, follow up with leads, book appointments, and get more 5-star reviews.">
-
-<meta property="og:url" content="https://fieldmate.ca/">
-
-<meta name="twitter:title" content="FieldMate | Turn Missed Calls Into Booked Jobs">
-
-<meta name="twitter:description" content="FieldMate helps service businesses capture missed calls, follow up with leads, book appointments, and request Google reviews automatically.">
-
-
-<!-- =========================================
-     GLOBAL SOCIAL SETTINGS (SAME EVERY PAGE)
-========================================= -->
-
-<meta property="og:site_name" content="FieldMate">
-
-<meta property="og:type" content="website">
-
-<meta property="og:image" content="https://fieldmate.ca/img/social-preview.png">
-
-<meta property="og:image:width" content="1200">
-
-<meta property="og:image:height" content="630">
-
-<meta name="twitter:card" content="summary_large_image">
-
-<meta property="twitter:image" content="https://fieldmate.ca/img/social-preview.png">
-
-
-<!-- =========================================
-     GLOBAL BRANDING (SAME EVERY PAGE)
-========================================= -->
-
-<meta name="theme-color" content="#05070c">
-
-<link rel="icon" type="image/svg+xml" sizes="32x32" href="./img/favicon.svg">
-
-<link rel="icon" type="image/svg+xml" sizes="16x16" href="./img/favicon.svg">
-
-<link rel="apple-touch-icon" href="./img/favicon.svg">
-
-
-<!-- =========================================
-     GLOBAL FONTS (SAME EVERY PAGE)
-========================================= -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
-
-
-<!-- =========================================
-     GLOBAL CSS (SAME EVERY PAGE)
-========================================= -->
-
-<link rel="stylesheet" href="./css/style.css">
 </head>
-
-
 <body>
 
-<div class="bg-noise" aria-hidden="true"></div>
-<div class="bg-grid" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="container">
+    <nav class="site-nav" aria-label="Main navigation">
 
-<a href="#main" class="skip-link">Skip to main content</a>
+      <!-- Logo -->
+      <a href="index.html" class="site-nav__logo" aria-label="FieldMate home">
+        <img
+          src="./img/full-logo.svg"
+          alt="FieldMate"
+        >
+      </a>
 
-<!-- ============================================================
-     NAV
-============================================================ -->
-<header id="siteHeader">
-  <nav aria-label="Primary">
-    <a class="logo" href="index.html"><img src="./img/company-logo.svg" alt="FieldMate logo"></a>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html" aria-current="page">Home</a>
-      
-      <div class="nav-item has-dropdown">
-        <div class="nav-feature-link">
-          <a href="features.html" class="nav-link">Features</a>
-          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-label="Toggle Features submenu">+</button>
-        </div>
-        <div class="dropdown">
-          <a href="missed-call-text-back.html">Missed Call Text Back</a>
-          <a href="appointment-booking.html">Appointment Booking</a>
-          <a href="lead-follow-up-system.html">Lead Follow-Up</a>
-          <a href="google-review-request.html">Review Requests</a>
-        </div>
+      <!-- Desktop Navigation -->
+      <div class="site-nav__links">
+
+        <a href="#how-it-works">How It Works</a>
+        <a href="#revenue-recovery">Revenue Recovery</a>
+        <a href="#automations">Automations</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+
       </div>
-      
-      <a href="how-it-works.html">How it works</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">Blog</a>
-    </div>
 
-    <div class="nav-cta" id="navCta">
-      <a href="demo.html" class="btn btn-primary btn-sm" id="navCtaBtn">Book A Call</a>
-      <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
-        <svg class="icon-open" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        <svg class="icon-close" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      <!-- Desktop CTA -->
+      <button
+        type="button"
+        class="btn btn--primary site-nav__cta js-open-demo"
+      >
+        Book a Demo
       </button>
-    </div>
-  </nav>
+
+      <!-- Mobile Menu Button -->
+      <button
+        type="button"
+        class="site-nav__toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="site-nav__mobile" id="mobile-menu">
+
+    <a href="#how-it-works">How It Works</a>
+    <a href="#revenue-recovery">Revenue Recovery</a>
+    <a href="#automations">Automations</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+
+    <button
+      type="button"
+      class="btn btn--primary js-open-demo"
+    >
+      Book a Demo
+    </button>
+
+  </div>
 </header>
+  
 
-<main id="main">
+  <main>
 
-<!-- ============================================================
-     HERO
-============================================================ -->
-<section class="hero">
-  <div class="glow"></div>
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">Missed call text back for trades & service businesses</span>
-      <!-- <h1>Every missed call is a job going to <span class="grad-text">your competitor.</span></h1> -->
-      <h1>Every missed call<br>could be your next lost job.</h1>
-      <p class="lead">FieldMate automatically texts missed callers back in seconds, follows up with leads, and helps turn missed opportunities into booked jobs before customers move on across Winnipeg and surrounding areas.</p>
-      <div class="hero-actions">
-        <a href="demo.html" class="btn btn-primary">Book A Call</a>
-        <a href="how-it-works.html" class="btn btn-ghost">See how it works</a>
-      </div>
-      <div class="hero-proof">
-        <div class="proof-stat"><b>&lt; 15 sec</b><span>Response time</span></div>
-        <div class="proof-stat"><b>24/7</b><span>Lead follow-up</span></div>
-        <div class="proof-stat"><b>0</b><span>Apps to install or learn</span></div>
-      </div>
-    </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
 
-    <div class="phone-stage" aria-hidden="true">
-      <div class="phone">
-        <div class="phone-screen">
-          <div class="phone-status"><span>9:41</span><span>&#9679;&#9679;&#9679;&#9679;&#9679;</span></div>
-          <div class="phone-content">
+          <div class="hero__content">
 
-            <!-- View 1: Incoming / Missed call -->
-            <div class="phone-view call-view active" id="callView">
-              <div>
-                <div class="call-avatar">JS</div>
-                <div class="call-label" id="callLabel">Incoming Call</div>
-                <div class="call-name">John Smith</div>
-                <div class="call-number">(204) 123-4567</div>
-              </div>
-              <div class="call-actions">
-                <span class="call-btn decline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
-                <span class="call-btn accept"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.6 21 3 14.4 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg></span>
-              </div>
+            <span class="hero__eyebrow">
+              Revenue Recovery for Home Service Businesses
+            </span>
+
+            <h1 class="hero__title">
+              Stop Losing Revenue to Missed Calls & Forgotten Leads
+            </h1>
+
+            <p class="hero__text">
+              FieldMate automatically follows up with leads, recovers missed opportunities,
+              requests reviews, and brings past customers back.
+            </p>
+
+            <div class="hero__actions">
+
+              <button type="button" class="btn btn--primary js-open-demo">
+                Book a Demo
+              </button>
+
+              <a href="#how-it-works" class="btn btn--secondary">
+                See How It Works
+              </a>
+
+
+
+          </div>
+
+            <div class="hero__meta">
+              <span>$97/month</span>
+              <span class="hero__meta-divider"></span>
+              <span>$297 one-time setup</span>
+              <span class="hero__meta-divider"></span>
+              <span>Everything included</span>
             </div>
 
-            <!-- View 2: Chat conversation -->
-            <div class="phone-view chat-view" id="chatView">
-              <div class="chat-header">
-                <div class="chat-avatar">FM</div>
-                <div class="chat-title"><b>FieldMate</b><span>Active now</span></div>
-              </div>
-              <div class="chat-body" id="chatBody"></div>
-              <div class="chat-input"><div class="pill"></div></div>
-            </div>
+          </div>
 
-            <!-- View 3: Lock screen job notification -->
-            <div class="phone-view lock-view" id="lockView">
-              <div class="lock-time">9:41</div>
-              <div class="lock-date">Monday July 13</div>
-              <div class="lock-notif" id="lockNotif">
-                <span class="notif-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#eafcff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                <div class="notif-body">
-                  <div class="notif-app-row"><span>FieldMate</span><span>now</span></div>
-                  <span class="notif-badge">Confirmed</span>
-                  <div class="notif-title">New Job Booked</div>
-                  <div class="notif-detail">
-                    <b>Time:</b> Today, 2:30 PM<br>
-                    <b>Address:</b> 118 Maple St.<br>
-                    <b>Reason:</b> Kitchen sink leak
+          <div class="hero__visual">
+            <div class="hero__visual-glow"></div>
+            <div class="phone-stage" aria-hidden="true">
+              <div class="phone">
+                <div class="phone-screen">
+                  <div class="phone-status"><span>9:41</span><span>&#9679;&#9679;&#9679;&#9679;&#9679;</span></div>
+                  <div class="phone-content">
+
+                    <!-- View 1: Incoming / Missed call -->
+                    <div class="phone-view call-view active" id="callView">
+                      <div>
+                        <!-- <div class="call-avatar">JS</div> -->
+                        <div class="call-label" id="callLabel">Incoming Call</div>
+                        <div class="call-name">Unknown Caller</div>
+                        <div class="call-number">(204) 123-4567</div>
+                      </div>
+                      <div class="call-actions">
+                        <span class="call-btn decline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.4">
+                            <path d="M6 6l12 12M18 6L6 18" />
+                          </svg></span>
+                        <span class="call-btn accept"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                              d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.6 21 3 14.4 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" />
+                          </svg></span>
+                      </div>
+                    </div>
+
+                    <!-- View 2: Chat conversation -->
+                    <div class="phone-view chat-view" id="chatView">
+                      <div class="chat-header">
+                        <div class="chat-avatar">ABC</div>
+                        <div class="chat-title"><b>ABC Plumbing</b><span>Active now</span></div>
+                      </div>
+                      <div class="chat-body" id="chatBody"></div>
+                      <div class="chat-input">
+                        <div class="pill"></div>
+                      </div>
+                    </div>
+
+                    <!-- View 3: Lock screen job notification -->
+                    <div class="phone-view lock-view" id="lockView">
+                      <div class="lock-time">9:41</div>
+                      <div class="lock-date">Monday July 13</div>
+                      <div class="lock-notif" id="lockNotif">
+                        <!-- <span class="notif-icon"><svg viewBox="0 0 24 24" fill="none"> -->
+                            <path d="M20 6L9 17l-5-5" stroke="#eafcff" stroke-width="2.6" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></span>
+                        <div class="notif-body">
+                          <div class="notif-app-row"><span>FieldMate</span><span>now</span></div>
+                          <span class="notif-badge">New Lead</span>
+                          <div class="notif-title">Task Created</div>
+                          <div class="notif-detail">
+                            <b>Name:</b> Sarah<br>
+                            <b>Address:</b> 123 Main St<br>
+                            <b>Reason:</b> Kitchen sink drain&nbsp;issue
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works section" id="how-it-works">
+      <div class="container">
+
+      <div class="how-it-works__header">
+
+        <span class="section-eyebrow">
+          How FieldMate Works
+        </span>
+
+        <h2 class="how-it-works__title">
+          From Missed Call to Recovered Revenue
+        </h2>
+
+        <p class="how-it-works__intro">
+          FieldMate follows the customer journey automatically, so leads and past customers don’t get forgotten.
+        </p>
+
+      </div>
+
+
+      <div class="how-it-works__steps">
+
+        <article class="how-it-works__step">
+          <div class="how-it-works__number">
+            01
+          </div>
+
+          <div class="how-it-works__step-content">
+            <h3>You Miss the Call</h3>
+
+            <p>
+              FieldMate instantly texts the caller and starts the conversation while you stay focused on the job.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="how-it-works__step">
+          <div class="how-it-works__number">
+            02
+          </div>
+
+          <div class="how-it-works__step-content">
+            <h3>FieldMate Follows Up</h3>
+
+            <p>
+              The system collects the important details and keeps the lead moving until you’re ready to take over.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="how-it-works__step">
+          <div class="how-it-works__number">
+            03
+          </div>
+
+          <div class="how-it-works__step-content">
+            <h3>You Close the Job</h3>
+
+            <p>
+              Move the customer to Completed and FieldMate handles reviews, reactivation, and future follow-up.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+
+      <div class="how-it-works__demo" id="demo">
+
+        <div class="how-it-works__video">
+
+          <!-- Replace this with your actual demo video -->
+          <div class="how-it-works__video-placeholder">
+
+            <button class="how-it-works__play" type="button" aria-label="Play FieldMate demo">
+              <span>▶</span>
+            </button>
+
+            <span class="how-it-works__video-label">
+              See FieldMate in action
+            </span>
 
           </div>
+
         </div>
+
       </div>
-    </div>
-    <p class="visually-hidden">
-      Animated illustration: a customer's call goes unanswered, FieldMate immediately texts them back, gathers the job details, and books an appointment. The business owner then gets a lock screen notification confirming the new job, including the time, address, and reason for the visit.
-    </p>
-  </div>
-</section>
 
-<!-- ============================================================
-     WWHAT IT IS
-============================================================ -->
+      </div>
+    </section>
 
-<section class="page-section">
-  <div class="wrap" style="max-width:720px;">
-    <div class="reveal" style="text-align:center;">
-      <span class="eyebrow" style="justify-content:center;">The basics</span>
-      <h2 class="section-title">What Is Missed Call Text Back</h2>
+    <!-- REVENUE RECOVERY LOOP -->
+    <section class="revenue-loop section" id="revenue-recovery">
+      <div class="container">
 
-      <p class="section-sub" style="margin:16px auto 0;">
-        <a class="link-cyan" href="missed-call-text-back-winnipeg.html">Missed call text back</a> is a system that automatically sends a text message to a customer the moment you miss their call.
+        <div class="revenue-loop__header">
+
+          <span class="section-eyebrow">
+            Revenue Recovery
+          </span>
+
+          <h2 class="revenue-loop__title">
+            Every Customer Has More Value
+          </h2>
+
+          <p class="revenue-loop__intro">
+            FieldMate helps you capture the lead, close the job, get the review, and stay connected after the work is done.
+          </p>
+
+        </div>
+
+
+        <div class="revenue-loop__flow">
+
+          <!-- Stage 1 -->
+
+          <article class="revenue-loop__card">
+
+            <div class="revenue-loop__icon">
+              <span>01</span>
+            </div>
+
+            <div class="revenue-loop__content">
+
+              <span class="revenue-loop__label">
+                MISSED CALL
+              </span>
+
+              <h3>
+                Capture the Lead
+              </h3>
+
+              <p>
+                Missed calls automatically receive a text so potential customers aren't left waiting for a callback.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- Connector -->
+
+          <div class="revenue-loop__connector" aria-hidden="true">
+            <span></span>
+          </div>
+
+
+          <!-- Stage 2 -->
+
+          <article class="revenue-loop__card">
+
+            <div class="revenue-loop__icon">
+              <span>02</span>
+            </div>
+
+            <div class="revenue-loop__content">
+
+              <span class="revenue-loop__label">
+                NEW LEAD
+              </span>
+
+              <h3>
+                Keep It Moving
+              </h3>
+
+              <p>
+                FieldMate follows up, gathers the important details, and keeps conversations from going cold.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- Connector -->
+
+          <div class="revenue-loop__connector" aria-hidden="true">
+            <span></span>
+          </div>
+
+
+          <!-- Stage 3 -->
+
+          <article class="revenue-loop__card">
+
+            <div class="revenue-loop__icon">
+              <span>03</span>
+            </div>
+
+            <div class="revenue-loop__content">
+
+              <span class="revenue-loop__label">
+                COMPLETED JOB
+              </span>
+
+              <h3>
+                Turn Jobs Into Reviews
+              </h3>
+
+              <p>
+                Once the job is complete, FieldMate automatically sends your review request and gives customers a way to respond.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- Connector -->
+
+          <div class="revenue-loop__connector" aria-hidden="true">
+            <span></span>
+          </div>
+
+
+          <!-- Stage 4 -->
+
+          <article class="revenue-loop__card">
+
+            <div class="revenue-loop__icon">
+              <span>04</span>
+            </div>
+
+            <div class="revenue-loop__content">
+
+              <span class="revenue-loop__label">
+                PAST CUSTOMER
+              </span>
+
+              <h3>
+                Bring Them Back
+              </h3>
+
+              <p>
+                Customer reactivation and seasonal campaigns give past customers a reason to call you again.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="revenue-loop__bottom">
+
+          <div class="revenue-loop__bottom-line"></div>
+
+          <p>
+            One system. From the first missed call to the next job.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 1 click automations -->
+    <section class="automations section" id="automations">
+      <div class="container">
+
+        <div class="automations__header">
+
+          <span class="section-eyebrow">
+            1-Click Automations
+          </span>
+
+          <h2 class="automations__title">
+            More Revenue After the Job
+          </h2>
+
+          <p class="automations__intro">
+            The job may be finished, but FieldMate keeps working to generate reviews, repeat business, and future opportunities.
+          </p>
+
+        </div>
+
+
+        <div class="automations__grid">
+
+          <!-- Google Reviews -->
+
+          <article class="automation-card">
+
+            <div class="automation-card__top">
+
+              <div class="automation-card__icon">
+                ★
+              </div>
+
+              <span class="automation-card__tag">
+                1-CLICK
+              </span>
+
+            </div>
+
+            <div class="automation-card__body">
+
+              <h3>
+                Google Review Request
+              </h3>
+
+              <p>
+                Automatically ask completed customers for feedback and make it easy for happy customers to leave a Google review.
+              </p>
+
+            </div>
+
+            <div class="automation-card__flow">
+              <span>Job Completed</span>
+              <span class="automation-card__arrow">→</span>
+              <span>Review Request</span>
+            </div>
+
+          </article>
+
+
+          <!-- Customer Reactivation -->
+
+          <article class="automation-card">
+
+            <div class="automation-card__top">
+
+              <div class="automation-card__icon">
+                ↻
+              </div>
+
+              <span class="automation-card__tag">
+                1-CLICK
+              </span>
+
+            </div>
+
+            <div class="automation-card__body">
+
+              <h3>
+                Customer Reactivation
+              </h3>
+
+              <p>
+                Automatically reconnect with past customers after they've had time to need your services again.
+              </p>
+
+            </div>
+
+            <div class="automation-card__flow">
+              <span>Past Customer</span>
+              <span class="automation-card__arrow">→</span>
+              <span>New Opportunity</span>
+            </div>
+
+          </article>
+
+
+          <!-- Seasonal Campaigns -->
+
+          <article class="automation-card">
+
+            <div class="automation-card__top">
+
+              <div class="automation-card__icon">
+                ◷
+              </div>
+
+              <span class="automation-card__tag">
+                1-CLICK
+              </span>
+
+            </div>
+
+            <div class="automation-card__body">
+
+              <h3>
+                Seasonal Campaigns
+              </h3>
+
+              <p>
+                Activate prebuilt seasonal campaigns designed around the services your customers are most likely to need.
+              </p>
+
+            </div>
+
+            <div class="automation-card__flow">
+              <span>Campaign Ready</span>
+              <span class="automation-card__arrow">→</span>
+              <span>Activate</span>
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="automations__footer">
+
+          <span class="automations__footer-icon">
+            ✓
+          </span>
+
+          <p>
+            No campaigns to build. No sequences to manage. Just choose what you want running.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- YOU JUST DO THE JOB -->
+    <section class="simple section">
+      <div class="container">
+
+        <div class="simple__grid">
+
+          <!-- Content -->
+
+          <div class="simple__content">
+
+            <span class="section-eyebrow">
+              Built for Busy Trades
+            </span>
+
+            <h2 class="simple__title">
+              You Run the Business. FieldMate Handles the Follow-Up.
+            </h2>
+
+            <p class="simple__intro">
+              You don't need another complicated system to manage. Do the work, update the customer when the job is complete, and FieldMate takes it from there.
+            </p>
+
+
+            <div class="simple__steps">
+
+              <div class="simple__step">
+
+                <div class="simple__step-number">
+                  01
+                </div>
+
+                <div class="simple__step-content">
+
+                  <h3>
+                    Do the Job
+                  </h3>
+
+                  <p>
+                    Focus on the customer and get the work done. FieldMate handles the communication happening in the background.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="simple__step">
+
+                <div class="simple__step-number">
+                  02
+                </div>
+
+                <div class="simple__step-content">
+
+                  <h3>
+                    Mark It Complete
+                  </h3>
+
+                  <p>
+                    When the job is finished, simply move the customer to Completed in the app.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="simple__step">
+
+                <div class="simple__step-number">
+                  03
+                </div>
+
+                <div class="simple__step-content">
+
+                  <h3>
+                    FieldMate Takes Over
+                  </h3>
+
+                  <p>
+                    Review requests, customer reactivation, and future campaigns happen automatically.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Visual -->
+
+          <div class="simple__visual">
+
+            <div class="simple__visual-card">
+
+              <div class="simple__visual-header">
+
+                <div>
+                  <span class="simple__visual-label">
+                    CUSTOMER
+                  </span>
+
+                  <strong>
+                    John Smith
+                  </strong>
+                </div>
+
+                <span class="simple__status">
+                  Active
+                </span>
+
+              </div>
+
+
+              <div class="simple__visual-divider"></div>
+
+
+              <div class="simple__job">
+
+                <div class="simple__job-icon">
+                  ✓
+                </div>
+
+                <div class="simple__job-content">
+
+                  <span>
+                    Plumbing Service
+                  </span>
+
+                  <strong>
+                    Job Completed
+                  </strong>
+
+                </div>
+
+              </div>
+
+
+              <div class="simple__complete">
+
+                <div class="simple__complete-check">
+                  ✓
+                </div>
+
+                <div>
+
+                  <span>
+                    Pipeline Stage
+                  </span>
+
+                  <strong>
+                    Completed
+                  </strong>
+
+                </div>
+
+              </div>
+
+
+              <div class="simple__automation">
+
+                <div class="simple__automation-line"></div>
+
+                <span>
+                  FieldMate automation started
+                </span>
+
+              </div>
+
+
+              <div class="simple__results">
+
+                <div class="simple__result">
+                  <span>✓</span>
+                  Review request
+                </div>
+
+                <div class="simple__result">
+                  <span>✓</span>
+                  Customer reactivation
+                </div>
+
+                <div class="simple__result">
+                  <span>✓</span>
+                  Future campaigns
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EVERYTHING INCLUDED -->
+    <section class="features section">
+      <div class="container">
+
+        <div class="features__header">
+
+          <span class="section-eyebrow">
+            Everything Included
+          </span>
+
+          <h2 class="features__title">
+            One System. Nothing Extra to Manage.
+          </h2>
+
+          <p class="features__intro">
+            FieldMate handles the follow-up work that usually gets missed when you're busy running the business.
+          </p>
+
+        </div>
+
+
+        <div class="features__grid">
+
+          <!-- Feature 1 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              ↗
+            </div>
+
+            <h3>
+              Missed Call Recovery
+            </h3>
+
+            <p>
+              Automatically text missed callers so potential customers get a response even when you can't answer.
+            </p>
+
+          </article>
+
+
+          <!-- Feature 2 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              ◎
+            </div>
+
+            <h3>
+              Lead Follow-Up
+            </h3>
+
+            <p>
+              Keep new leads moving with automated conversations that collect the information you need.
+            </p>
+
+          </article>
+
+
+          <!-- Feature 3 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              ↻
+            </div>
+
+            <h3>
+              Cold Lead Recovery
+            </h3>
+
+            <p>
+              When a conversation goes quiet, FieldMate follows up before letting the opportunity disappear.
+            </p>
+
+          </article>
+
+
+          <!-- Feature 4 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              ★
+            </div>
+
+            <h3>
+              Google Review Requests
+            </h3>
+
+            <p>
+              Automatically ask completed customers for feedback and make it easy for happy customers to review you.
+            </p>
+
+          </article>
+
+
+          <!-- Feature 5 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              ↻
+            </div>
+
+            <h3>
+              Customer Reactivation
+            </h3>
+
+            <p>
+              Reconnect with past customers and create new opportunities from people who already know your business.
+            </p>
+
+          </article>
+
+
+          <!-- Feature 6 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              ◷
+            </div>
+
+            <h3>
+              Seasonal Campaigns
+            </h3>
+
+            <p>
+              Activate ready-to-run campaigns for the seasons and services that matter most to your business.
+            </p>
+
+          </article>
+
+
+          <!-- Feature 7 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              !
+            </div>
+
+            <h3>
+              Owner Handover
+            </h3>
+
+            <p>
+              When something needs your attention, FieldMate hands the conversation over and creates a follow-up task.
+            </p>
+
+          </article>
+
+
+          <!-- Feature 8 -->
+
+          <article class="feature-card">
+
+            <div class="feature-card__icon">
+              ✓
+            </div>
+
+            <h3>
+              Simple Client App
+            </h3>
+
+            <p>
+              Everything is kept simple so your team can manage customers without learning another complicated platform.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="features__bottom">
+
+          <span class="features__check">
+            ✓
+          </span>
+
+          <span>
+            Installed and managed for you
+          </span>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+
+        <div class="pricing__header">
+          <span class="section-eyebrow">
+            Simple Pricing
+          </span>
+
+          <h2 class="pricing__title">
+            One System. One Price.
+          </h2>
+
+          <p class="pricing__intro">
+            Everything you need to recover missed opportunities and generate more revenue from the customers you already have.
+          </p>
+        </div>
+
+        <div class="pricing__card">
+
+          <div class="pricing__main">
+
+            <span class="pricing__label">
+              FIELD MATE REVENUE RECOVERY SYSTEM
+            </span>
+
+            <div class="pricing__price">
+              <span class="pricing__amount">$97</span>
+              <span class="pricing__period">/month</span>
+            </div>
+
+            <p class="pricing__setup">
+              $297 one-time setup
+            </p>
+
+            <p class="pricing__description">
+              Installed, configured, and managed for your business so you can focus on the work instead of the follow-up.
+            </p>
+
+            <button type="button" class="btn btn--primary js-open-demo">
+              Book a Demo
+            </button>
+
+          </div>
+
+          <div class="pricing__included">
+
+            <span class="pricing__included-label">
+              EVERYTHING INCLUDED
+            </span>
+
+            <div class="pricing__features">
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Missed call recovery</p>
+              </div>
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Automated lead follow-up</p>
+              </div>
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Cold lead recovery</p>
+              </div>
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Google review requests</p>
+              </div>
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Customer reactivation</p>
+              </div>
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Seasonal campaigns</p>
+              </div>
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Owner handover & task alerts</p>
+              </div>
+
+              <div class="pricing__feature">
+                <span>✓</span>
+                <p>Simple client app</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="pricing__note">
+          <span>✓</span>
+          <p>No complicated plans. No features locked behind higher tiers.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container">
+
+        <div class="faq__header">
+          <span class="section-eyebrow">
+            Frequently Asked
+          </span>
+
+          <h2 class="faq__title">
+            Questions, Answered.
+          </h2>
+
+          <p class="faq__intro">
+            Everything you need to know before getting FieldMate working for your business.
+          </p>
+        </div>
+
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary>
+              What exactly is FieldMate?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                FieldMate is a managed revenue recovery system for home service businesses. It follows up with missed callers and leads, helps recover cold opportunities, requests Google reviews, reconnects with past customers, and runs seasonal campaigns.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              Do I need to learn new software?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                No. FieldMate is designed to keep things simple. Your team handles the work as usual, and when a job is completed, you update the customer. FieldMate handles the follow-up from there.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              What happens when I miss a call?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                FieldMate automatically sends the caller a text message and starts the conversation, giving you a chance to recover the opportunity instead of letting the caller disappear.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              What happens if a lead goes cold?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                FieldMate follows up with the lead automatically. If they still don't respond, the opportunity can be flagged for your attention so it doesn't quietly disappear.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              Can FieldMate handle customer reviews?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                Yes. When a job is completed, FieldMate can automatically send a Google review request to the customer and notify you if they respond.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              Can I bring past customers back?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                Yes. FieldMate can reconnect with past customers and run campaigns designed to create new opportunities from people who have already done business with you.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              What does setup include?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                We configure FieldMate around your business, including your follow-up system, customer communication, review requests, reactivation, campaigns, and handover processes.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              How much does FieldMate cost?
+              <span class="faq__icon">+</span>
+            </summary>
+
+            <div class="faq__answer">
+              <p>
+                FieldMate is $97 per month with a one-time setup fee of $297. Everything is included in the single plan.
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section" id="get-started">
+  <div class="container">
+
+    <div class="final-cta__inner">
+
+      <span class="section-eyebrow">
+        Ready to Recover More?
+      </span>
+
+      <h2 class="final-cta__title">
+        Your Next Customer<br>
+        Could Already Be in Your Pipeline.
+      </h2>
+
+      <p class="final-cta__text">
+        FieldMate keeps missed calls, leads, reviews, and past customers moving while you focus on running the business.
       </p>
 
-      <p class="section-sub" style="margin:14px auto 0;">
-        Instead of going to voicemail and losing the lead, the customer gets an instant reply asking what they need and offering next steps.
-      </p>
+      <div class="final-cta__actions">
+        <button type="button" class="btn btn--primary js-open-demo">
+          Book a Demo
+        </button>
 
-      <p class="section-sub" style="margin:14px auto 0;">
-        For trades like plumbing, HVAC, electrical, and roofing, it means fewer lost calls, faster response times, and more jobs booked without needing to stop what you're&nbsp;doing.
-      </p>
+        <a href="#pricing" class="btn btn--secondary">
+          See Pricing
+        </a>
+      </div>
+
+      <div class="final-cta__meta">
+        <span>$97/month</span>
+        <span class="final-cta__divider"></span>
+        <span>$297 one-time setup</span>
+        <span class="final-cta__divider"></span>
+        <span>Everything included</span>
+      </div>
 
     </div>
+
   </div>
 </section>
 
-<!-- ============================================================
-     TRUST / BUILT FOR TRADES
-============================================================ -->
-<div class="divider"></div>
-<section class="trust">
-  <div class="wrap trust-row">
-    <span class="trust-label">Built for Winnipeg service businesses in</span>
-    <div class="trade-badges">
-      <span class="trade-badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.775-3.775a6 6 0 01-7.94 7.94l-6.816 6.816a2 2 0 01-2.83-2.83l6.816-6.816a6 6 0 017.94-7.94l-3.774 3.775z"/></svg> Plumbing</span>
-      <span class="trade-badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg> HVAC</span>
-      <span class="trade-badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-14h-7l0-6z"/></svg> Electrical</span>
-      <span class="trade-badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12L12 3l9 9M5 10v10h5v-6h4v6h5V10"/></svg> Roofing</span>
-      <span class="trade-badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V8l9-5 9 5v13"/><path d="M5 10h14"/></svg><path d="M5 14h14"/><path d="M5 18h14"/></svg>Garage Doors</span>
-      <span class="trade-badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M12 12C9 10 6 7 6 3c4 0 7 2 8 6"/><path d="M12 15c3-2 6-5 6-9-4 0-7 2-8 6"/><path d="M5 22h14"/></svg>Landscaping</span>
-      <span class="trade-badge"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6"/><path d="M10 3v4l-3 4v10h10V11l-3-4V3"/><path d="M7 15h10"/><path d="M9 19h6"/></svg>Cleaning</span>
-    </div>
-  </div>
-</section>
+  </main>
 
-<!-- ============================================================
-     PROBLEM
-============================================================ -->
-<section class="page-section">
-  <div class="wrap problem-grid">
-    <div class="problem-copy reveal">
-      <span class="eyebrow">The problem</span>
-      <h2 class="section-title">You're not losing jobs to bad work. You're losing them to <span class="grad-text">silence.</span></h2>
-      <ul class="problem-list">
-        <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg> You're on a job. The phone rings. You can't answer.</li>
-        <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg> The customer hangs up and calls the next business they find on Google.</li>
-        <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg> That job, and the referrals it could have created, go to someone else.</li>
-      </ul>
-    </div>
-    <div class="stat-cards reveal">
-      <div class="stat-card warn"><b>62%</b><span>Of calls can go unanswered when teams are busy.</span></div>
-      <div class="stat-card"><b>85%</b><span>Of customers may move on after reaching voicemail.</span></div>
-      <div class="stat-card"><b>$3,200+</b><span>Potential revenue tied up in missed opportunities.</span></div>
-      <div class="stat-card warn"><b>1 in 3</b><span>Missed calls may represent urgent service needs.</span></div>
-    </div>
-  </div>
-</section>
 
-<!-- ============================================================
-     SOLUTION
-============================================================ -->
-<div class="divider"></div>
-<section class="solution" id="solution">
-  <div class="wrap">
-    <div class="solution-head reveal">
-      <span class="eyebrow">The fix</span>
-      <h2 class="section-title">FieldMate steps in when you can't.</h2>
-      <p class="section-sub" style="margin-top:14px;">The moment a call is missed, FieldMate steps in by text and keeps the opportunity alive while you finish the job in front of you.</p>
-    </div>
-    <div class="solution-grid reveal">
-      <div class="solution-item">
-        <span class="num">Instant reply</span>
-        <h3>Texts back in under 15 seconds</h3>
-        <p>No hold music, no voicemail. The caller gets a real reply before they've even put the phone down.</p>
-      </div>
-      <div class="solution-item">
-        <span class="num">Real conversation</span>
-        <h3>Asks what they need, where, and when</h3>
-        <p>FieldMate gathers the job details, what happened, where you are located, and when the customer needs help, just like your best office manager would.</p>
-      </div>
-      <div class="solution-item">
-        <span class="num">Books the job</span>
-        <h3>Locks in a time on your calendar</h3>
-        <p>The customer picks a time that works, and it lands straight on your calendar without the back-and-forth.</p>
-      </div>
-      <div class="solution-item">
-        <span class="num">Smart handoff</span>
-        <h3>Hands off tricky ones to you</h3>
-        <p>Pricing negotiations, complaints, or anything unusual, FieldMate flags it and pulls you in immediately.</p>
-      </div>
-    </div>
-    <div class="reveal" style="margin-top:36px; display:flex; justify-content:center;">
-      <a href="features.html" class="btn btn-ghost">See the features</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     HOW IT WORKS
-============================================================ -->
-<section class="how" id="how">
-  <div class="wrap">
-    <div class="reveal" style="max-width:560px;">
-      <span class="eyebrow">How it works</span>
-      <h2 class="section-title">Simple setup. No technical headaches.</h2>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="step-num">1</div>
-        <h3>Connect Your Business Phone Number</h3>
-        <p>FieldMate works with the number already on your trucks and website. Setup is simple and keeps your existing number in place.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num">2</div>
-        <h3>FieldMate starts the conversation</h3>
-        <p>Every missed call gets an instant text conversation that qualifies the job, answers basic questions, and offers appointment times.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num">3</div>
-        <h3>The job lands on your calendar</h3>
-        <p>You get the job details, show up prepared, and your team handles the work.</p>
-      </div>
-    </div>
-    <div class="reveal" style="margin-top:48px; display:flex; justify-content:center;">
-      <a href="how-it-works.html" class="btn btn-ghost">See the full walkthrough</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     DIFFERENTIATOR
-============================================================ -->
-<div class="divider"></div>
-<section class="differentiator">
-  <div class="wrap">
-    <div class="reveal" style="max-width:600px;">
-      <span class="eyebrow">No new software to learn</span>
-      <h2 class="section-title">This isn't another app to babysit.</h2>
-      <p class="section-sub" style="margin-top:14px;">FieldMate works quietly in the background. We handle the setup, and your team doesn't need to learn another complicated system just to follow up with customers.</p>
-    </div>
-    <div class="compare reveal">
-      <div class="compare-card old">
-        <h4>The old way</h4>
-        <ul class="compare-list">
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg> Another app to download and learn</li>
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg> Another dashboard to remember to check</li>
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg> Another login your team has to manage</li>
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg> Hours spent managing software instead of customers</li>
-        </ul>
-      </div>
-      <div class="compare-card new">
-        <h4>The FieldMate way</h4>
-        <ul class="compare-list">
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Works through regular text messages, nothing to install</li>
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> We set it up and manage it for you</li>
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Jobs show up right on your existing calendar</li>
-          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Ready to launch after onboarding</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     FEATURES GRID
-============================================================ -->
-<section class="features" id="features">
-  <div class="wrap">
-    <div class="reveal" style="max-width:560px;">
-      <span class="eyebrow">Core System Included</span>
-      <h2 class="section-title">Built for how service businesses actually work.</h2>
-    </div>
-    <div class="features-grid reveal">
-      <div class="feature-card">
-        <div class="feature-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
-        <h3>Instant missed-call texts</h3>
-        <p>Every unanswered call triggers a text reply in under 15 seconds, day or night, even when you're mid-job.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-        <h3>Calendar booking</h3>
-        <p>Customers pick a real open slot, and it lands on the schedule you already use.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-9-9 9 9 0 019 9z"/></svg></div>
-        <h3>Job qualifying questions</h3>
-        <p>FieldMate asks what's wrong, where, and how urgent, so you show up prepared.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg></div>
-        <h3>Human handoff</h3>
-        <p>Anything outside the conversation, like pricing questions or complaints, gets flagged and handed off to you.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-        <h3>Works on your number</h3>
-        <p>Keep the number on your trucks and website. FieldMate works with the number your customers already know.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M18.7 8l-5.1 5.1-4-4L3 15.6"/></svg></div>
-        <h3>Automated Lead Follow-Up</h3>
-        <p>Leads stay engaged with timely messages until they respond, book, or no longer need help.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     HUMAN ESCALATION
-============================================================ -->
-<div class="divider"></div>
-<section class="escalation-section" id="escalation">
-  <div class="wrap escalation">
-    <div class="escalation-copy reveal">
-      <span class="eyebrow">FieldMate knows when you need to step in.</span>
-      <h2 class="section-title">When the conversation needs a human touch, FieldMate brings you in.</h2>
-      <p class="section-sub" style="margin-top:14px;margin-bottom:24px;">FieldMate knows the difference between a simple service request and a conversation that needs your attention. Pricing questions, complaints, and unusual requests are sent straight to you.</p>
-      <ul class="problem-list">
-        <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> Instant alert with the full conversation attached</li>
-        <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> You reply from your own phone, no new app required.</li>
-        <li><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> The customer gets a seamless experience from start to finish.</li>
-      </ul>
-    </div>
-    <div class="esc-panel reveal">
-      <div class="esc-inner" id="escBody">
-        <div class="esc-row customer">
-          <div class="esc-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
-          <div class="esc-text"><b>Customer</b><span>"Actually, can I get a discount if I bundle this with a water heater flush too?"</span></div>
-        </div>
-        <div class="esc-row trigger">
-          <div class="esc-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg></div>
-          <div class="esc-text"><b>Needs a human</b><span>Pricing question detected, owner approval needed</span></div>
-        </div>
-        <div class="esc-row notify">
-          <div class="esc-icon"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg></div>
-          <div class="esc-text"><b>Sent to Mike (Owner)</b><span>"Sarah's asking about a bundle discount. Full conversation attached."</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     INTEGRATIONS / GROWTH
-============================================================ -->
-<section class="integrations">
-  <div class="wrap" style="text-align:center;">
-    <div class="reveal" style="max-width:600px;margin:0 auto;">
-      <span class="eyebrow">Grows with your business</span>
-      <h2 class="section-title">Fits into the way you already work.</h2>
-      <p class="section-sub" style="margin:14px auto 0;">FieldMate works alongside your existing workflow, keeping missed calls, customer conversations, and appointments organized without forcing you to change how your business runs.</p>
-    </div>
-    <div class="integrations-strip reveal">
-      <div class="int-pill"><span class="int-dot"></span> Existing phone number</div>
-      <div class="int-pill"><span class="int-dot"></span> Existing calendar</div>
-      <div class="int-pill"><span class="int-dot"></span> Existing workflow</div>
-      <div class="int-pill"><span class="int-dot"></span> Built to expand</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     PRICING
-============================================================ -->
-<section class="pricing-page-section" id="plans">
-  <div class="wrap">
-
-    <div class="system-price-card reveal">
-      <div class="system-price-head">
-        <h2>FieldMate System</h2>
-        <p>Missed call text back system for trades that can't always answer the phone.</p>
-      </div>
-      <div class="system-price-amt"><b>$297</b><span>/ month</span></div>
-      <p class="system-price-desc">Recover just one missed call and you're covered.</p>
-      <div class="system-features">
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Missed Call Text Back</div>
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Two-Way Customer Texting</div>
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Lead Qualification<br>(filters serious jobs)</div>
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Automated Follow-Up<br>(no leads slip through)</div>
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Appointment Booking</div>
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Appointment Reminders</div>
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Human Follow-Up Alerts</div>
-        <div class="system-feature"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Google Review Requests</div>
-      </div>
-      <div class="reveal" style="margin-top:48px; display:flex; justify-content:center;">
-        <a href="pricing.html" class="btn btn-ghost">View Full Pricing</a>
-      </div>
-    </div>
-
-    <p class="reveal" style="text-align:center;max-width:640px;margin:32px auto 0;font-size:13.5px;color:var(--text-low);">Built for real day-to-day business use. If your call volume grows a lot, we'll work with you to scale — no surprise charges.</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     FINAL CTA
-============================================================ -->
-<section class="final-cta">
-  <div class="glow"></div>
-  <div class="wrap">
-    <span class="eyebrow" style="justify-content:center;">Stop losing jobs to missed calls</span>
-    <h2>Ready to capture the calls you're missing?</h2>
-    <p>FieldMate responds when you can't, so you can stay focused on the work in front of you.</p>
-    <a href="demo.html" class="btn btn-primary">Book A Call</a>
-    <div class="final-note">No obligation &middot; See how FieldMate works</div>
-  </div>
-</section>
-
-</main>
-
-<!-- ============================================================
+<!-- ========================================
      FOOTER
-============================================================ -->
-<footer>
-  <div class="wrap foot-col">
-    <a class="logo" href="index.html"><img src="./img/company-logo.svg" alt="FieldMate logo"></a>
+======================================== -->
 
-    <nav class="foot-links" aria-label="Footer">
-      <a href="index.html">Home</a>
-      <a href="features.html">Features</a>
-      <a href="how-it-works.html">How it works</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">Blog</a>
-    </nav>
+<footer class="site-footer">
 
-    <div class="foot-copy">
-      &copy; 2026 FieldMate. Built for service businesses. |
-      <a href="terms-and-conditions.html" class="legal-pages">Terms & Conditions</a> |
-      <a href="privacy-policy.html" class="legal-pages">Privacy Policy</a>
+  <div class="container">
+
+    <div class="site-footer__main">
+
+      <!-- Footer Brand -->
+      <div class="site-footer__brand">
+
+        <a
+          href="index.html"
+          class="site-footer__logo"
+          aria-label="FieldMate home"
+        >
+          <img
+            src="./img/full-logo-white.svg"
+            alt="FieldMate"
+          >
+        </a>
+
+        <span class="site-footer__descriptor">
+          Revenue Recovery System
+        </span>
+
+        <p class="site-footer__tagline">
+          Recover missed opportunities, follow up with leads, and bring past
+          customers back automatically.
+        </p>
+
+      </div>
+
+
+      <!-- Footer Navigation -->
+      <nav
+        class="site-footer__links"
+        aria-label="Footer navigation"
+      >
+
+        <a href="index.html#how-it-works">
+          How It Works
+        </a>
+
+        <a href="index.html#pricing">
+          Pricing
+        </a>
+
+        <button
+          type="button"
+          class="btn btn--primary js-open-demo"
+        >
+          Book a Demo
+        </button>
+
+      </nav>
+
     </div>
+
+
+    <!-- Footer Bottom -->
+    <div class="site-footer__bottom">
+
+      <p>
+        © 2026 FieldMate. All rights reserved.
+      </p>
+
+      <div class="site-footer__legal">
+
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms-of-service.html">
+          Terms of Service
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
+
 </footer>
 
-<script src="./js/main.js"></script>
-<script src="./js/index.js"></script>
+
+
+
+<!-- Demo Booking Modal -->
+<div class="demo-modal" id="demo-modal" aria-hidden="true">
+
+  <div class="demo-modal__overlay js-close-demo"></div>
+
+  <div
+    class="demo-modal__dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="demo-modal-title"
+  >
+
+    <button
+      type="button"
+      class="demo-modal__close js-close-demo"
+      aria-label="Close demo booking"
+    >
+      &times;
+    </button>
+
+    <div class="demo-modal__header">
+      <span class="demo-modal__eyebrow">
+        Book a Demo
+      </span>
+
+      <h2 id="demo-modal-title">
+        See FieldMate in Action
+      </h2>
+
+      <p>
+        Choose a time that works for you and we'll show you how FieldMate can recover missed opportunities for your business.
+      </p>
+    </div>
+
+    <div class="demo-modal__calendar">
+
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/booking/Q29tE64epzV5Jgb6Bs7J"
+        style="width: 100%; border: none; overflow: hidden;"
+        scrolling="no"
+        title="Book a FieldMate demo"
+        id="Q29tE64epzV5Jgb6Bs7J_1788467167346"
+        allow="payment">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script
+  src="https://link.msgsndr.com/js/form_embed.js"
+  type="text/javascript">
+</script>
+<script src="./js/script.js"></script>
+<script src="./js/hero.js"></script>
 </body>
 </html>
