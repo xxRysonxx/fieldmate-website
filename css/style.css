@@ -1192,7 +1192,7 @@
   align-items: center;
   gap: var(--space-2);
 
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-2);
 
   font-size: var(--text-sm);
   font-weight: var(--font-weight-700);
@@ -1203,12 +1203,12 @@
 
 
 .section-eyebrow::before {
-  content: "";
+  /* content: "";
 
   width: 1.5rem;
   height: 2px;
 
-  background: var(--color-primary);
+  background: var(--color-primary); */
 }
 
 
@@ -1259,7 +1259,7 @@
   display: flex;
   gap: var(--space-4);
 
-  padding: var(--space-6);
+  padding: var(--space-7) var(--space-6);
 }
 
 
@@ -1546,7 +1546,7 @@
 .revenue-loop__card {
   position: relative;
 
-  padding: var(--space-6);
+  padding: var(--space-6) var(--space-4);
 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -2844,6 +2844,7 @@
   font-weight: var(--font-weight-800);
   line-height: .95;
   letter-spacing: -0.06em;
+  margin-bottom: .5rem;
 }
 
 .pricing__period {
@@ -2853,10 +2854,11 @@
 }
 
 .pricing__setup {
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-5);
   font-size: var(--text-sm);
-  font-weight: var(--font-weight-600);
-  color: rgba(255, 255, 255, .72);
+  font-weight: var(--font-weight-400);
+  letter-spacing: .09rem;
+  color: rgba(255, 255, 255, .99);
 }
 
 .pricing__description {
@@ -2950,7 +2952,7 @@
 
   .pricing__main,
   .pricing__included {
-    padding: var(--space-7) var(--space-5);
+    padding: var(--space-7) var(--space-8);
   }
 
   .pricing__features {
@@ -2967,7 +2969,7 @@
 
   .pricing__main,
   .pricing__included {
-    padding: var(--space-6) var(--space-4);
+    padding: var(--space-8) var(--space-7);
   }
 
   .pricing__amount {
@@ -3174,10 +3176,10 @@
 
 .final-cta__title {
   margin-bottom: var(--space-5);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: var(--font-weight-800);
-  line-height: 1.04;
-  letter-spacing: -0.045em;
+  line-height: 1.1;
+  /* letter-spacing: -0.045em; */
   color: var(--color-white);
 }
 
@@ -3374,8 +3376,8 @@
 
 .site-footer__descriptor {
   display: block;
-  margin-top: -.25rem;
-  margin-bottom: var(--space-2);
+  margin-top: .15rem;
+  margin-bottom: var(--space-3);
   font-size: .8125rem;
   font-weight: var(--font-weight-600);
   letter-spacing: .02em;
